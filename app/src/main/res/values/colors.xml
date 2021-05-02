@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="barleyCorn">#b79c68</color>
+    <color name="darkTan">#917545</color>
+    <color name="spice">#6c4d3d</color>
+    <color name="woodBark">#302922</color>
+    <color name="saratoga">#5c6434</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="starkWhite">#cdbead</color>
+    <color name="sandDune">#8b7665</color>
+    <color name="bianca">#f5ede2</color>
+    <color name="halfPearlLusta">#eee4d1</color>
+    <color name="heatheredGrey">#938c7c</color>
+</resources>

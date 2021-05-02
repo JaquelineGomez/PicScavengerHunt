@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/halfPearlLusta"
+    tools:context=".Leaderboard">
+
+
+    <TextView
+        android:id="@+id/leaderboardTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/starkWhite"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:text="Leaderboard" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank1TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/rank1_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank2TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/rank2_nameTV"
+                android:layout_width="317dp"
+                android:layout_height="24dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Name 2"
+                android:textColor="@color/bianca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank3TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/rank3_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank4TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/rank4_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank5TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/rank5_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank6TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/bianca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rank6_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank7TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/rank7_nameTV"
+                android:layout_width="317dp"
+                android:layout_height="24dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Name 7"
+                android:textColor="@color/bianca"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank8TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/rank8_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank9TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/rank9_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/rank10TV"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/rank10_nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:textColor="@color/bianca"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Name 10" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
