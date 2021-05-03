@@ -38,10 +38,11 @@
         android:layout_gravity="center"/>
 
     <Button
-        android:id="@+id/Instructions"
+        android:id="@+id/SignOutBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Instructions"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:onClick="returnMainActivity"
+        android:text="Sign-out" />
 
 </LinearLayout>
