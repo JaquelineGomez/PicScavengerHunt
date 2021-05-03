@@ -22,7 +22,7 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
@@ -344,4 +344,12 @@
                 android:text="Name 10" />
         </TableRow>
     </TableLayout>
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="returnHomeScreen"
+        android:layout_marginTop="50dp"
+        android:text="Back to Home Screen" />
 </LinearLayout>
