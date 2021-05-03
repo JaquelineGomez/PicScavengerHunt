@@ -34,8 +34,9 @@
         android:id="@+id/leaderboardBtn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Leaderboard"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:onClick="onClickLeaderboardBtn"
+        android:text="Leaderboard" />
 
     <Button
         android:id="@+id/SignOutBtn"

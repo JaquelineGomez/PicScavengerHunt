@@ -19,6 +19,12 @@ public class homeScreen extends AppCompatActivity {
         Intent i = new Intent(this, gameScreen.class);
         startActivity(i);
     }
+
+    public void onClickLeaderboardBtn(View view)
+    {
+        Intent i = new Intent(this, Leaderboard.class);
+        startActivity(i);
+    }
     public void returnMainActivity(View view)
     {
         finish();
