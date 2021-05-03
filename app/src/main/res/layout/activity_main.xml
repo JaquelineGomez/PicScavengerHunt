@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/woodBark"
+        android:onClick="onClickLogInBtn"
         android:text="Log in"
         android:textSize="18sp"
         android:translationY="210dp" />
