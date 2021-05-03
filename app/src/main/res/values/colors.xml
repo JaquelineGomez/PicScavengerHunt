@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="barleyCorn">#b79c68</color>
-    <color name="darkTan">#917545</color>
-    <color name="spice">#6c4d3d</color>
-    <color name="woodBark">#302922</color>
-    <color name="saratoga">#5c6434</color>
+    <color name="silverSand">#c2c2bb</color>
+    <color name="acadia">#2f2d29</color>
+    <color name="ironsideGrey">#6d6d65</color>
+    <color name="dune">#504d45</color>
+    <color name="delta">#92938d</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="starkWhite">#cdbead</color>
-    <color name="sandDune">#8b7665</color>
-    <color name="bianca">#f5ede2</color>
-    <color name="halfPearlLusta">#eee4d1</color>
-    <color name="heatheredGrey">#938c7c</color>
+    <color name="friarGrey">#888778</color>
+    <color name="woodland">#697047</color>
+    <color name="grey">#848484</color>
+    <color name="snowDrift">#e9e9e8</color>
+    <color name="verdunGreen">#446418</color>
+    <color name="darkRum">#45342a</color>
+    <color name="tea">#BEB59E</color>
 </resources>

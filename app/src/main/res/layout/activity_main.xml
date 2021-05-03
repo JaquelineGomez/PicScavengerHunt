@@ -16,7 +16,7 @@
         android:textSize="24sp"
         android:fontFamily="monospace"
         android:layout_marginTop="30dp"
-        android:textColor="@color/woodBark"
+        android:textColor="@color/darkRum"
         android:gravity="center"
         android:text="Enter email address:" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:fontFamily="monospace"
-        android:textColor="@color/woodBark"
+        android:textColor="@color/darkRum"
         android:gravity="center"
         android:text="Enter Password:" />
 
@@ -51,7 +51,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/woodBark"
         android:onClick="onClickSignUpBtn"
         android:text="Sign up"
         android:textSize="18sp"
@@ -62,7 +61,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/woodBark"
         android:onClick="onClickLogInBtn"
         android:text="Log in"
         android:textSize="18sp"
