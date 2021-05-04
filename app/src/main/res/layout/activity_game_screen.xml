@@ -6,14 +6,42 @@
     android:layout_height="match_parent"
     android:background="@color/tea"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".gameScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:text="Item: "
+        android:textColor="@color/darkRum"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cameraIV"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+    <Button
+        android:id="@+id/captureImageBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="captureImage"
+        android:text="Capture Image" />
 
     <Button
         android:id="@+id/returnBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginTop="80dp"
         android:onClick="returnHomeScreen"
         android:text="Back to Home Screen" />
+
 
 </LinearLayout>
