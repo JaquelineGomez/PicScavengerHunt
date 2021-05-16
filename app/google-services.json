@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "689809436562",
+    "project_id": "picscavengerhunt",
+    "storage_bucket": "picscavengerhunt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689809436562:android:32206cad6dbe1499fe1b4b",
+        "android_client_info": {
+          "package_name": "com.example.picscavengerhunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689809436562-uukce1to92tjc9on5j5rdqbusi5eiriq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxJXsyCzaW2393hV1Vaq74ezjc-YUERDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689809436562-uukce1to92tjc9on5j5rdqbusi5eiriq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
