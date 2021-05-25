@@ -42,9 +42,9 @@
         android:id="@+id/ET_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPassword"
-        android:autofillHints="" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/createAccountBtn"
