@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class gameScreen extends AppCompatActivity {
     String [] items ={"dog","cat","pen", "shoe", "fork"};
     static int level= 1;
@@ -20,7 +23,7 @@ public class gameScreen extends AppCompatActivity {
 
     private long startTime;
     private long stopTime;
-    private long timeElapsed;
+    long points=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +49,29 @@ public class gameScreen extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        stopTime = System.currentTimeMillis();
         Bitmap bitmap = (Bitmap) data.getExtras().get("data");
         imageDisplay.setImageBitmap(bitmap);
         level++;
-        Toast.makeText(getApplicationContext(),"Congrats!! Next Level in 5 seconds",Toast.LENGTH_SHORT).show();
-        stopTime = System.currentTimeMillis();
+        setPoints();
+
         Toast.makeText(getApplicationContext(),"Time:"+ getElapsedTimeSecs()+"seconds",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Congrats!! Next Level in 5 seconds",Toast.LENGTH_SHORT).show();
         setItemTV();
+//        startTime = System.currentTimeMillis();
+//        while((System.currentTimeMillis()-startTime)!=0)
+//        {
+//
+//        }
+//        setItemTV();
+        //        new java.util.Timer().schedule(
+//                new java.util.TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        setItemTV();
+//                    }
+//                }, 5000
+//        );
     }
 
     public void setItemTV()
@@ -60,6 +79,19 @@ public class gameScreen extends AppCompatActivity {
         itemTV.setText("Find: " +items[level-1]);
     }
 
+    public long calculatePoints()
+    {
+        double timeElapse= (double) getElapsedTimeSecs();
+        double i= (1/timeElapse);
+        return Math.round(points+(level*(i)*1000)+100);
+    }
+
+    public void setPoints()
+    {
+        points+= calculatePoints();
+        TextView textView = findViewById(R.id.pointTV);
+        textView.setText("  "+points);
+    }
     public long getElapsedTimeSecs()
     {
         long elapsed;
@@ -67,4 +99,18 @@ public class gameScreen extends AppCompatActivity {
         return elapsed;
     }
 
+//    public void countDownNextLevel()
+//    {
+//        TimerTask timerTask= new TimerTask() {
+//            @Override
+//            public void run() {
+//                Toast.makeText(getApplicationContext(),"Time:"+ getElapsedTimeSecs()+"seconds",Toast.LENGTH_SHORT).show();
+//                setItemTV();
+//            }
+//        };
+//        Timer timer =new Timer("Timer");
+//        long delay=5000L;
+//
+//        timer.schedule(timerTask,delay);
+//    }
 }
