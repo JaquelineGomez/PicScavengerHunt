@@ -17,12 +17,18 @@ public class gameScreen extends AppCompatActivity {
     static int level= 1;
     TextView itemTV;
     ImageView imageDisplay;
+
+    private long startTime;
+    private long stopTime;
+    private long timeElapsed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
         itemTV=findViewById(R.id.itemTV);
         setItemTV();
+        startTime = System.currentTimeMillis();
     }
 
     public void returnHomeScreen(View view)
@@ -44,7 +50,8 @@ public class gameScreen extends AppCompatActivity {
         imageDisplay.setImageBitmap(bitmap);
         level++;
         Toast.makeText(getApplicationContext(),"Congrats!! Next Level in 5 seconds",Toast.LENGTH_SHORT).show();
-        //add timer
+        stopTime = System.currentTimeMillis();
+        Toast.makeText(getApplicationContext(),"Time:"+ getElapsedTimeSecs()+"seconds",Toast.LENGTH_SHORT).show();
         setItemTV();
     }
 
@@ -52,4 +59,12 @@ public class gameScreen extends AppCompatActivity {
     {
         itemTV.setText("Find: " +items[level-1]);
     }
+
+    public long getElapsedTimeSecs()
+    {
+        long elapsed;
+        elapsed = ((System.currentTimeMillis() - startTime) / 1000);
+        return elapsed;
+    }
+
 }
