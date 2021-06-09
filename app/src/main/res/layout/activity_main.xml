@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/tV_emailAddress"
+        android:id="@+id/tV_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
@@ -18,14 +18,14 @@
         android:layout_marginTop="30dp"
         android:textColor="@color/darkRum"
         android:gravity="center"
-        android:text="Enter email address:" />
+        android:text="Enter Email:" />
 
     <EditText
-        android:id="@+id/emailAddress"
+        android:id="@+id/ET_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:inputType="textNoSuggestions"
         android:autofillHints="" />
 
     <TextView
@@ -39,12 +39,12 @@
         android:text="Enter Password:" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/ET_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPassword"
-        android:autofillHints="" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/createAccountBtn"
