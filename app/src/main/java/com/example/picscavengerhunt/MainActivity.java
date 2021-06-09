@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 EditText mEmail,mPassword;
 Button loginBtn, signupBtn;
 FirebaseAuth fAuth;
-
+    static String password= "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +41,7 @@ FirebaseAuth fAuth;
     public void onClickSignUpBtn(View view)
     {
         String email = mEmail.getText().toString();
-        String password = mPassword.getText().toString();
+         password = mPassword.getText().toString();
 
         if(TextUtils.isEmpty(email))
         {
@@ -58,6 +58,7 @@ FirebaseAuth fAuth;
             mPassword.setError("Password must be 6 or more characters long");
             return;
         }
+        validatePassword(password);
         
         fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -82,5 +83,22 @@ FirebaseAuth fAuth;
     {
         Intent i = new Intent(this, homeScreen.class);
         startActivity(i);
+    }
+
+    public String validatePassword(String password)
+    {
+        if(!password.matches("(?=.*[A-Za-z]+)(?=.*[0-9]+)(?=.*[!@#&()_[{}]:;',?/*~$^+=<>]+).*"))
+        {
+            Toast.makeText(MainActivity.this,"The password "+ password+" is in the wrong format. Please include a special character and letter", Toast.LENGTH_SHORT).show();
+        }
+        return password;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public static void setPassword(String password01) {
+        password = password01;
     }
 }
