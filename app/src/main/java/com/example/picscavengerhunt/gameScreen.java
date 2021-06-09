@@ -23,7 +23,7 @@ public class gameScreen extends AppCompatActivity {
 
     private long startTime;
     private long stopTime;
-    long points=0;
+     static long points=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class gameScreen extends AppCompatActivity {
         setItemTV();
         startTime = System.currentTimeMillis();
     }
+
 
     public void returnHomeScreen(View view)
     {
@@ -77,6 +78,25 @@ public class gameScreen extends AppCompatActivity {
     public void setItemTV()
     {
         itemTV.setText("Find: " +items[level-1]);
+    }
+    public static int getLevel() {
+        return level;
+    }
+
+    public static void setLevel(int level) {
+        gameScreen.level = level;
+    }
+
+    public static long getPoints() {
+        return points;
+    }
+
+    public static void setPoints(long point) {
+        points = point;
+        if(point<0)
+        {
+            points=(long)0.0;
+        }
     }
 
     public long calculatePoints()

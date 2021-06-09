@@ -10,7 +10,31 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    
+
+    @Test
+    public void pointsDecimal()
+    {
+        gameScreen.setPoints((long)0.1);
+        long pointDecimal=gameScreen.getPoints();
+        assertEquals(pointDecimal,(long)0.1);
+    }
+
+    @Test
+    public void pointsZero()
+    {
+        gameScreen.setPoints((long)0.0);
+        long pointZero=gameScreen.getPoints();
+        assertEquals(pointZero,(long)0.0);
+    }
+
+    @Test
+    public void pointsNegative()
+    {
+        gameScreen.setPoints((long)-1.0);
+        long pointZero=gameScreen.getPoints();
+        assertEquals(pointZero,(long)0.0);
+    }
+
     @Test
     public void password()
     {
